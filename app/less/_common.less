@@ -1,0 +1,105 @@
+// -------------------------
+// reset
+
+body,div,dl,dt,dd,ul,ol,li,form,table,tr,td,
+h1,h2,h3,h4,h5,h6,pre,p,span,b,i,
+input,textarea, fieldset {margin:0; padding:0;}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: @baseFontSerif;
+	font-weight: @headingsFontWeight;
+	color:@black;
+
+	a {
+		color:@black;
+
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+}
+
+ul {list-style-type:none;}
+img, fieldset {border:none;}
+table {border-collapse:collapse; border-spacing:0;}
+
+input, textarea, select, label { font-size:1em; font-family:inherit;}
+input[type="submit"] { cursor:pointer;}
+
+a img,fieldset{
+	border:none;
+}
+// END reset
+// -------------------------
+
+// font preset
+// -------------------------
+// @font-face { }
+
+
+// Basic page styles
+// -------------------------
+html,body {
+	height: 100%;
+	margin: 0;
+	min-width:1000px;
+}
+body {
+	font-size:@baseFontSize;
+	font-family:@baseFontFamily;
+	line-height:@baseLineHeight;
+	color:@gray;
+	background:@white;
+}
+
+a {
+	text-decoration:none;
+	color:@linkColor;
+	transition: color .3 ease;
+	outline:none;
+
+	&:hover {
+		text-decoration:underline;
+	}
+}
+
+
+// Link-preset
+// -------------------------
+
+.link {
+	display:inline-block;
+	vertical-align:top;
+	text-decoration:underline;
+	font-style:italic;
+
+//	&__inner {
+//		line-height:1.2;
+//		text-decoration:none;
+//		border-bottom:1px solid;
+//	}
+
+	&:hover {
+		color: #1e1e1e;
+		text-decoration: underline;
+	}
+	&_more {
+		color:#818282;
+
+		&:hover {
+			text-decoration:underline;
+			color: #1e1e1e;
+		}
+	}
+}
+
+.link_pseudo {
+	.link__inner { border-bottom-style:dotted;}
+}
+
+// Global blocks
+// -------------------------
+
+.g-red { color:@red !important;}
+.g-gray { color:@gray !important;}
+

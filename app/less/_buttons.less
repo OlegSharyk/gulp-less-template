@@ -1,0 +1,52 @@
+/*---------------------------------------------------------------------------
+	[Buttons]
+---------------------------------------------------------------------------*/
+.btn {
+	font-size: 12px;
+	line-height: 16px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 20px;
+	color:#8b8b8b;
+	background-color: #666;
+	
+
+	&_red {
+		padding: 8px 10px 9px;
+		border-top: 1px solid lighten(green, 15%);
+		border-left: 1px solid lighten(green, 15%);
+		border-right: 1px solid lighten(green, 15%);
+		border-bottom: 1px solid lighten(green, 15%);
+		color:#fff;
+		background-color: lighten(green, 15%);
+		border-radius: 4px;
+
+
+		&:hover {
+			background-color: lighten(green, 40%);
+			text-decoration: none;
+		}
+
+		&_big {
+			font-size:13px;
+			line-height:16px;
+			padding:9px 17px 11px;
+		}
+
+		&.btn_dsbl {
+			color:#e3f3ff;
+			border-top:1px solid lighten(grey, 15%);
+			border-left:1px solid lighten(grey, 15%);
+			border-right:1px solid lighten(grey, 15%);
+			border-bottom:1px solid lighten(grey, 15%);
+			background-color:lighten(grey, 15%);
+			text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+			cursor: default;
+
+			&:hover {
+				background-color: lighten(grey, 15%);
+			}
+		}
+	}
+}
