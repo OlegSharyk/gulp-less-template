@@ -6,28 +6,28 @@ If you've previously installed gulp globally, run npm rm --global gulp before fo
 
 ### Check for node, npm, and npx
 
-### `node --version`
-### `npm --version`
-### `npx --version`
+#### `node --version`
+#### `npm --version`
+#### `npx --version`
 
 If they are not installed, follow the instructions [here](https://nodejs.org/en/).
 
 ### Install the gulp command line utility
 
-### `npm install --global gulp-cli`
+#### `npm install --global gulp-cli`
 
 ### Verify your gulp versions installed
 
-### `gulp --version` or `gulp --v`
+#### `gulp --version` or `gulp --v`
 
 
 ## In the project directory, you need to run:
 
-### `npm install`
+#### `npm install`
 
 Run the gulp command in your project directory:
 
-### `gulp`
+#### `gulp`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
